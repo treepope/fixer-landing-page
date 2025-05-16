@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,36 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Sarabun', sans-serif;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 md:px-6 mx-auto max-w-7xl;
+  }
+  
+  .btn-primary {
+    @apply bg-carfix-orange hover:bg-carfix-dark-orange text-white font-medium py-3 px-6 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-carfix-orange focus:ring-opacity-50;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-100 text-carfix-orange border border-carfix-orange font-medium py-3 px-6 rounded-lg shadow-sm transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-carfix-orange focus:ring-opacity-50;
+  }
+  
+  .section-heading {
+    @apply text-2xl sm:text-3xl font-bold mb-6 text-center;
+  }
+  
+  .benefit-card {
+    @apply bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center transition-all duration-300 hover:shadow-lg;
+  }
+  
+  .service-card {
+    @apply bg-white rounded-lg shadow p-4 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-md hover:bg-gray-50;
+  }
+
+  .sticky-cta {
+    @apply fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t border-gray-200 py-3 px-4 flex items-center justify-between z-50;
   }
 }

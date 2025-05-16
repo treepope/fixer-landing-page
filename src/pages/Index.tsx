@@ -9,6 +9,7 @@ import FAQ from '@/components/FAQ';
 import CallToAction from '@/components/CallToAction';
 import Footer from '@/components/Footer';
 import StickyCTA from '@/components/StickyCTA';
+import AppPromotion from '@/components/AppPromotion';
 import { useToast } from "@/hooks/use-toast";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -41,6 +42,7 @@ const Index = () => {
         <BenefitsSection />
         <ServiceTypes />
         <SignupProcess />
+        <AppPromotion />
         <FAQ />
         <CallToAction />
       </main>

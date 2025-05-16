@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Facebook } from 'lucide-react';
+import { Facebook, Phone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -18,6 +18,13 @@ const Footer = () => {
           
           <div className="mt-6 md:mt-0 flex flex-col items-center md:items-end">
             <div className="flex items-center gap-4 mb-3">
+              <a 
+                href="tel:094-861-9595"
+                className="text-white hover:text-carfix-orange transition-colors duration-200 flex items-center gap-2"
+              >
+                <Phone size={18} />
+                <span>094-861-9595</span>
+              </a>
               <a 
                 href="https://facebook.com/24carfix" 
                 target="_blank" 

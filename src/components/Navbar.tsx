@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Facebook } from 'lucide-react';
+import { Facebook, Phone } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -11,6 +11,14 @@ const Navbar = () => {
           <span className="text-xl font-bold text-carfix-orange">24CARFIX</span>
         </div>
         <div className="flex items-center gap-4">
+          <a 
+            href="tel:094-861-9595"
+            className="bg-carfix-orange hover:bg-carfix-dark-orange text-white rounded-full px-4 py-2 flex items-center gap-2 transition-colors duration-200"
+            aria-label="โทรหา 24CARFIX"
+          >
+            <Phone size={18} />
+            <span className="hidden sm:inline-block">094-861-9595</span>
+          </a>
           <a 
             href="https://facebook.com/24carfix" 
             target="_blank" 

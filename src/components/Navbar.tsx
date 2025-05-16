@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { Facebook } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -9,9 +10,20 @@ const Navbar = () => {
         <div className="flex items-center">
           <span className="text-xl font-bold text-carfix-orange">24CARFIX</span>
         </div>
-        <Button className="btn-primary hidden sm:inline-flex">
-          สมัครเป็นช่าง
-        </Button>
+        <div className="flex items-center gap-4">
+          <a 
+            href="https://facebook.com/24carfix" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-carfix-orange hover:text-carfix-dark-orange transition-colors duration-200"
+            aria-label="24CARFIX บน Facebook"
+          >
+            <Facebook size={24} />
+          </a>
+          <Button className="btn-primary hidden sm:inline-flex">
+            สมัครเป็นช่าง
+          </Button>
+        </div>
       </div>
     </header>
   );

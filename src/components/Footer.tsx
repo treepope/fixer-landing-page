@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Facebook } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,7 +16,18 @@ const Footer = () => {
             </p>
           </div>
           
-          <div className="mt-6 md:mt-0">
+          <div className="mt-6 md:mt-0 flex flex-col items-center md:items-end">
+            <div className="flex items-center gap-4 mb-3">
+              <a 
+                href="https://facebook.com/24carfix" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white hover:text-carfix-orange transition-colors duration-200"
+                aria-label="24CARFIX บน Facebook"
+              >
+                <Facebook size={20} />
+              </a>
+            </div>
             <p className="text-sm text-gray-400">
               &copy; {currentYear} 24CARFIX. All rights reserved.
             </p>

@@ -1,4 +1,5 @@
 
+import React, { useEffect } from "react"; // Important to import React explicitly
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,11 +7,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import { useEffect } from "react";
 
 const queryClient = new QueryClient();
 
-const App = () => {
+const App: React.FC = () => {
+  // Use React properly within a functional component
   useEffect(() => {
     // Update the document title
     document.title = "สมัครเป็นช่างกับ 24CARFIX | หางานซ่อมรถ รายได้ดี ทำงานอิสระ";

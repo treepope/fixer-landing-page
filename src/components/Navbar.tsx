@@ -73,7 +73,7 @@ const MobileDrawer = ({
         </li>
         <li>
           <Link
-            to="/contact"
+            to="/contact-us"
             onClick={onClose}
             className="flex items-center gap-2 px-2 py-2 rounded hover:bg-gray-100"
           >

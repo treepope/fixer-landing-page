@@ -56,10 +56,11 @@ const ApplicationForm = () => {
   const onSubmit = (data: FormValues) => {
     console.log(data);
     // Here you would normally send the data to your backend
-    
     toast({
       title: "ส่งข้อมูลสำเร็จ",
       description: "ขอบคุณสำหรับความสนใจ เราจะติดต่อกลับในเร็วๆ นี้",
+      variant: "default",
+      style: { backgroundColor: "#D1FAE5", color: "#065F46" }, // Tailwind's green-100 and green-800
     });
     
     form.reset();
@@ -76,7 +77,7 @@ const ApplicationForm = () => {
             name="fullName"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>ชื่อ-นามสกุล *</FormLabel>
+                <FormLabel className="text-left block">ชื่อ-นามสกุล *</FormLabel>
                 <FormControl>
                   <Input placeholder="กรุณากรอกชื่อ-นามสกุล" {...field} />
                 </FormControl>
@@ -84,13 +85,13 @@ const ApplicationForm = () => {
               </FormItem>
             )}
           />
-          
+
           <FormField
             control={form.control}
             name="phoneNumber"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>เบอร์โทรศัพท์ *</FormLabel>
+                <FormLabel className="text-left block">เบอร์โทรศัพท์ *</FormLabel>
                 <FormControl>
                   <Input placeholder="กรุณากรอกเบอร์โทรศัพท์" {...field} />
                 </FormControl>
@@ -98,30 +99,27 @@ const ApplicationForm = () => {
               </FormItem>
             )}
           />
-          
+
           <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>อีเมล</FormLabel>
+                <FormLabel className="text-left block">อีเมล (ไม่บังคับ)</FormLabel>
                 <FormControl>
                   <Input placeholder="กรุณากรอกอีเมล (ถ้ามี)" {...field} />
                 </FormControl>
-                <FormDescription>
-                  ไม่จำเป็นต้องกรอก
-                </FormDescription>
                 <FormMessage />
               </FormItem>
             )}
           />
-          
+
           <FormField
             control={form.control}
             name="location"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>พื้นที่ให้บริการ *</FormLabel>
+                <FormLabel className="text-left block">พื้นที่ให้บริการ *</FormLabel>
                 <FormControl>
                   <Input placeholder="เช่น กรุงเทพฯ, นนทบุรี" {...field} />
                 </FormControl>
@@ -129,13 +127,13 @@ const ApplicationForm = () => {
               </FormItem>
             )}
           />
-          
+
           <FormField
             control={form.control}
             name="serviceType"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>ประเภทบริการที่สนใจ *</FormLabel>
+                <FormLabel className="text-left block">ประเภทบริการที่สนใจ *</FormLabel>
                 <FormControl>
                   <Input placeholder="เช่น แบตเตอรี่, ยางรถยนต์" {...field} />
                 </FormControl>
@@ -143,13 +141,13 @@ const ApplicationForm = () => {
               </FormItem>
             )}
           />
-          
+
           <FormField
             control={form.control}
             name="experience"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>ประสบการณ์</FormLabel>
+                <FormLabel className="text-left block">ประสบการณ์</FormLabel>
                 <FormControl>
                   <Textarea 
                     placeholder="กรุณากรอกประสบการณ์ทำงาน (ถ้ามี)" 
@@ -157,14 +155,11 @@ const ApplicationForm = () => {
                     {...field} 
                   />
                 </FormControl>
-                <FormDescription>
-                  ไม่จำเป็นต้องกรอก
-                </FormDescription>
                 <FormMessage />
               </FormItem>
             )}
           />
-          
+
           <Button 
             type="submit" 
             className="btn-primary w-full"

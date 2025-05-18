@@ -17,14 +17,15 @@ const CallToAction = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             {/* Left Column: Contact Methods */}
             <div className="flex flex-col space-y-6">
-              {/* QR Code Section */}
+
+
+              {/* QR Code-App Section */}
               <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
-                <QrCode className="w-16 h-16 text-carfix-orange mb-4" />
                 <h3 className="text-xl font-bold mb-2">แสกน QR Code</h3>
-                <p className="text-gray-600 mb-4">แอด LINE Official: @24carfix</p>
+                <p className="text-gray-600 mb-4">ดาวน์โหลดแอปพลิเคชัน 24CARFIX Fixer</p>
                 <div className="w-48 h-48 bg-gray-200 rounded-lg flex items-center justify-center">
                   {/* Placeholder for actual QR Code */}
-                  <span className="text-gray-500">QR Code LINE @24carfix</span>
+                  <img src="/img/qrcode/app-qr.png" alt="QR Code" className="w-full h-full object-cover rounded-lg" />
                 </div>
               </div>
               
@@ -50,7 +51,17 @@ const CallToAction = () => {
         <div className="text-center mt-8">
           <div className="flex items-center justify-center">
             <Phone className="w-5 h-5 text-carfix-orange mr-2" />
-            <p className="text-gray-600">สอบถามเพิ่มเติม: 02-XXX-XXXX</p>
+            <p className="text-gray-600">
+              สอบถามเพิ่มเติม:{" "}
+              <span>
+                <a
+                  href="tel:0948619595"
+                  className="text-carfix-black-500  hover:text-orange-500 transition-colors"
+                >
+                  094-861-9595
+                </a>
+              </span>
+            </p>
           </div>
         </div>
       </div>

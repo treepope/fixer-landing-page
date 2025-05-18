@@ -1,5 +1,4 @@
-
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import BenefitsSection from '@/components/BenefitsSection';
@@ -45,6 +44,7 @@ const Index = () => {
         <AppPromotion />
         <FAQ />
         <CallToAction />
+        
       </main>
       
       <Footer />
@@ -53,6 +53,8 @@ const Index = () => {
       {isMobile && <StickyCTA />}
     </div>
   );
+
+  
 };
 
 export default Index;

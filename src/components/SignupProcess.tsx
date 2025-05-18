@@ -4,8 +4,8 @@ import { MessageSquare, FileText, CheckCircle } from 'lucide-react';
 
 const steps = [
   {
-    title: 'แอด LINE หรือกรอกฟอร์ม',
-    description: 'เริ่มต้นด้วยการแอดไลน์ @24carfix หรือกรอกฟอร์มสมัคร',
+    title: 'ดาวน์โหลดแอป 24CARFIX Fixer',
+    description: 'เริ่มต้นด้วยดาวน์โหลดแอป 24CARFIX Fixer เพื่อกรอกข้อมูล',
     icon: <MessageSquare className="w-12 h-12 mb-4 text-carfix-orange" />
   },
   {
@@ -15,7 +15,7 @@ const steps = [
   },
   {
     title: 'เริ่มรับงานได้เลย',
-    description: 'หลังอนุมัติ คุณสามารถเริ่มรับงานได้ทันที',
+    description: 'หลังผ่านการอนุมัติ คุณสามารถเริ่มรับงานได้ทันที!',
     icon: <CheckCircle className="w-12 h-12 mb-4 text-carfix-orange" />
   }
 ];
@@ -24,7 +24,7 @@ const SignupProcess = () => {
   return (
     <section className="py-16 bg-orange-50">
       <div className="container mx-auto px-4">
-        <h2 className="section-heading">ขั้นตอนการสมัคร 3 ขั้นตอนง่ายๆ</h2>
+        <h2 className="section-heading">ขั้นตอนการสมัคร 3 ขั้นตอนง่ายๆ</h2><br />
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, index) => (

@@ -1,18 +1,13 @@
-# Welcome to your Lovable project
+# Welcome
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/2a648fdc-4497-4ce8-8581-25f24a9a512a
+**URL**: [https://lovable.dev/projects/2a648fdc-4497-4ce8-8581-25f24a9a512a](https://fixer-landing-page.vercel.app/)
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/2a648fdc-4497-4ce8-8581-25f24a9a512a) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
 
 **Use your preferred IDE**
 

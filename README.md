@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: [https://lovable.dev/projects/2a648fdc-4497-4ce8-8581-25f24a9a512a](https://fixer-landing-page.vercel.app/)
+**URL**: (https://fixer-landing-page.vercel.app/)
 
 ## How can I edit this code?
 
@@ -54,12 +54,6 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/2a648fdc-4497-4ce8-8581-25f24a9a512a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
 
 Yes, you can!
 
